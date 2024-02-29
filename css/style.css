@@ -1,0 +1,628 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header {
+    background-color: #478ac9;
+    text-align: center;
+    padding: 10px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    text-align: justify;
+}
+
+.titre ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 10px 40px #000;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.titre ul li {
+    color: #fff;
+    padding: 20px;
+    line-height: 33px;
+    /* interligne */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    /* eviter que le texte soit souligner */
+    color: inherit;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.titre ul li:hover {
+    color: #000;
+    /*permet d'afficher le texte en couleur quand on passe dessus */
+    background: rgb(116, 199, 247);
+    font-weight: 600;
+}
+
+
+.placement {
+    padding-left: 10px;
+
+}
+
+h1 {
+    padding: 0;
+    color: rgb(32, 115, 193);
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-decoration: underline overline solid #2600a1;
+    transition: transform .3s;
+}
+
+h1:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline solid #000000;
+}
+
+.esp {
+    background-color: rgb(187, 221, 231);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.cadre li {
+    color: black;
+    font-size: 200;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.artel {
+    position: absolute;
+    right: 70%;
+}
+
+.tete {
+    transition: transform .4s;
+    padding: 4px;
+    border: 1px solid #000000;
+    max-width: 100%;
+}
+
+.tete:hover {
+    transform: scale(1.5);
+    /* Pour ne pas décaler les éléments quand on aggrandi */
+
+}
+
+.img {
+    text-align: center;
+}
+
+p {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+
+.txt {
+    position: relative;
+    text-align: center;
+    left: 220px;
+    bottom: 150px;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: inherit;
+}
+
+.formation {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(187, 221, 231);
+}
+
+.moi {
+    padding-top: 10px;
+    padding-right: 200px;
+    background-image: url("../images/nuage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cadre {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.comp {
+    text-align: left;
+}
+
+.logo {
+    position: relative;
+    text-align: right;
+
+}
+
+.cadre2 {
+    position: absolute;
+    left: 50%;
+    max-width: 50%;
+    background: rgb(116, 200, 221);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 13px 10px black;
+}
+
+.images {
+    position: relative;
+    padding-left: 15%;
+    transition: transform .4s;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+.photo {
+    position: absolute;
+    left: 5%;
+    transition: transform .4s;
+}
+
+.photo1 {
+    position: absolute;
+    left: 20%;
+    transition: transform .4s;
+}
+
+.photo2 {
+    position: absolute;
+    left: 12%;
+    top: 200px;
+    transition: transform .4s;
+}
+
+.photo:hover {
+    transform: scale(1.3);
+}
+
+.photo1:hover {
+    transform: scale(1.3);
+}
+
+.photo2:hover {
+    transform: scale(1.3);
+}
+
+.photooo {
+    position: relative;
+}
+
+.retour {
+    position: fixed;
+    max-width: 100%;
+    bottom: 10px;
+    right: 0px;
+    width: 130px;
+    height: 100px;
+}
+
+.timeline {
+    width: 800px;
+    /* Taille de la ligne */
+    height: 20px;
+    /*Aligner la timeline avec les points */
+    list-style: none;
+    text-align: justify;
+    /* Aligne les points */
+    margin: 80px auto;
+    /* centre la timeline */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgb(81, 128, 186) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+}
+
+.timeline:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    /* le texte s'étend sur 100% de la ligne */
+}
+
+.timeline li {
+    display: inline-block;
+    /* Alligner texte */
+    width: 23px;
+    height: 23px;
+    /* taille des ronds */
+    background: #113c8d;
+    text-align: center;
+    line-height: 1.2;
+    /* interligne espace */
+    position: relative;
+    border-radius: 50%;
+    /*permet de faire le rond */
+}
+
+.timeline li:before {
+    content: attr(data-year);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    /* épaisseur */
+    position: absolute;
+    transform: translateY(-30%);
+    /* rêgler la hauteur */
+}
+
+.timeline li:nth-child(odd):before {
+    top: -40px;
+    /* rêgler la position des titres de la ligne supérieur des texte en gras */
+    left: -40px;
+}
+
+.timeline li:nth-child(even):before {
+    bottom: -70px;
+    /* rêgler la position des titres de la ligne inférieur des textes en gras */
+    left: -50px;
+}
+
+.timeline li:after {
+    content: attr(data-text);
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+}
+
+.timeline li:nth-child(odd):after {
+    bottom: 0;
+    margin-bottom: -10px;
+    /* rêgler la position du texte de la ligne supérieur des textes normaux */
+    transform: translate(-50%, 100%);
+}
+
+.timeline li:nth-child(even):after {
+    top: 0;
+    margin-top: -10px;
+    /* rêgler la position du texte de la ligne inférieur des textes normaux*/
+    transform: translate(-50%, -100%);
+}
+
+.texte {
+    position: absolute;
+    left: 68%;
+    bottom: -1100px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: dehors 0.3 ease-out;
+    color: white;
+    padding: 0px;
+}
+
+.texte:hover {
+    animation: dessus 0.2 ease-in;
+    animation-fill-mode: forwards;
+    /* Pour pas que l'animation joue en boucle*/
+    background: rgb(58, 2, 169);
+    padding: 20px;
+    box-shadow: 0px 13px 10px black;
+}
+
+@keyframes dehors {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dessus {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.texte2 {
+    position: absolute;
+    left: 42%;
+    bottom: -1100px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: dehors 0.3 ease-out;
+    color: white;
+    padding: 0px;
+}
+
+.texte2:hover {
+    animation: dessus 0.2 ease-in;
+    animation-fill-mode: forwards;
+    /* Pour pas que l'animation joue en boucle*/
+    background: rgb(58, 2, 169);
+    padding: 20px;
+    max-width: 20%;
+    box-shadow: 0px 13px 10px black;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+}
+
+footer {
+    color: white;
+    background-color: rgb(66, 51, 151);
+    margin-bottom: 0px;
+}
+
+footer h1 {
+    color: rgb(131, 199, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-decoration: underline overline solid #6e46f3;
+}
+
+.contact {
+    padding-left: 20%;
+
+}
+
+.cont {
+    position: relative;
+    left: 11%;
+    bottom: 51px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: inherit;
+}
+
+a .cont {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+a .cont:hover {
+    color: rgb(47, 181, 243)
+}
+
+.cadre3 {
+    position: relative;
+    left: 45%;
+    max-width: 60%;
+    background: rgb(116, 200, 221);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 13px 10px black;
+}
+
+.container {
+    color: rgb(0, 0, 0);
+    width: 30%;
+    padding-left: 10%;
+}
+
+.barre {
+    background-color: #d4d4d4;
+    border-radius: 50px;
+    width: 100%;
+    padding: 0.2rem;
+}
+
+.progressbar {
+    background-color: rgb(59, 0, 162);
+    color: white;
+    padding: 0.2rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 50px;
+
+}
+
+.html {
+    width: 50%;
+}
+
+.python {
+    width: 70%;
+}
+
+.Pentest {
+    width: 20%;
+}
+.telephonie {
+    width: 40%;
+}
+.reseaux{
+    width: 60%;
+}
+
+.anglais {
+    width: 65%;
+}
+
+.espagnol {
+    width: 50%;
+}
+
+.progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.example {
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.example .fadedbox {
+    background-color: #1f0075;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 360px;
+    height: 100px;
+    padding: 130px 20px;
+}
+
+.example:hover .fadedbox {
+    opacity: 0.8;
+}
+
+.example .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+}
+
+.example .title {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+
+.example:hover .title,
+.example:focus .title {
+    opacity: 1;
+    transform: translateY(-85px);
+    -webkit-transform: translateY(-85px);
+}
+
+.soustitre {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 15%;
+}
+
+.projet {
+    background-color: rgb(187, 221, 231);
+    padding: 2%;
+    padding-bottom: 10%;
+}
+
+.lesprojets {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.plusInfo {
+    position: relative;
+    left: 50px;
+    bottom: 70px;
+
+    background-color: #478ac9;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cv{
+    background-color: rgb(115, 83, 243);
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+.cv h1 {   
+    color: rgb(131, 199, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-decoration: underline overline solid #6e46f3;
+}
+
+.cv1{
+    position: absolute;
+    background-color: rgb(66, 51, 151);
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;    /* permet d'aligner le bouton avec le bas */
+        margin: 4px 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        left: 15%;
+}
+
+.cv2{
+    position: absolute;
+    background-color: rgb(66, 51, 151);
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;    /* permet d'aligner le bouton avec le bas */
+        margin: 4px 2px;
+        border-radius: 15px;
+        cursor: pointer;  
+        right: 44%;
+}
+
+.cv3{
+    position: absolute;
+    background-color: rgb(66, 51, 151);
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;    /* permet d'aligner le bouton avec le bas */
+        margin: 4px 2px;
+        border-radius: 15px;
+        cursor: pointer;
+        right: 15%;
+}
+
+.cv1:hover {background-color: rgb(42, 35, 103);}
+.cv2:hover {background-color: rgb(42, 35, 103);}
+.cv3:hover {background-color: rgb(42, 35, 103);}
