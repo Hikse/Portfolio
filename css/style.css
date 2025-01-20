@@ -457,7 +457,11 @@ a .cont:hover {
 }
 
 .Pentest {
-    width: 20%;
+    width: 40%;
+}
+
+.Securite {
+    width : 40%;
 }
 .telephonie {
     width: 40%;
@@ -570,23 +574,10 @@ a .cont:hover {
     font-weight: bold;
 }
 
-.cv{
-    background-color: rgb(115, 83, 243);
-    font-size: 20px;
-    color: white;
-    font-family: sans-serif;
-    font-weight: 550;
-}
-
-.cv h1 {   
-    color: rgb(131, 199, 255);
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    text-decoration: underline overline solid #6e46f3;
-}
 
 .cv1{
     position: absolute;
-    background-color: rgb(66, 51, 151);
+    background-color: #2600a1;
         padding: 20px 34px;
         text-align: center;
         text-decoration: none;
@@ -594,35 +585,7 @@ a .cont:hover {
         margin: 4px 2px;
         border-radius: 15px;
         cursor: pointer;
-        left: 15%;
+        right: 25%;
 }
 
-.cv2{
-    position: absolute;
-    background-color: rgb(66, 51, 151);
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;    /* permet d'aligner le bouton avec le bas */
-        margin: 4px 2px;
-        border-radius: 15px;
-        cursor: pointer;  
-        right: 44%;
-}
-
-.cv3{
-    position: absolute;
-    background-color: rgb(66, 51, 151);
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;    /* permet d'aligner le bouton avec le bas */
-        margin: 4px 2px;
-        border-radius: 15px;
-        cursor: pointer;
-        right: 15%;
-}
-
-.cv1:hover {background-color: rgb(42, 35, 103);}
-.cv2:hover {background-color: rgb(42, 35, 103);}
-.cv3:hover {background-color: rgb(42, 35, 103);}
+.cv1:hover {background-color:#1f0075 ;}
